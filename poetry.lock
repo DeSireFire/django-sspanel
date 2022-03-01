@@ -314,17 +314,20 @@ postal = ["cryptography"]
 
 [[package]]
 name = "django-countries"
-version = "7.2.1"
+version = "7.3.1"
 description = "Provides a country field for Django models."
 category = "main"
 optional = false
 python-versions = "*"
 
+[package.dependencies]
+typing-extensions = "*"
+
 [package.extras]
 dev = ["tox", "black", "django", "pytest", "pytest-django", "djangorestframework", "graphene-django"]
 maintainer = ["transifex-client", "zest.releaser", "django"]
 pyuca = ["pyuca"]
-test = ["pytest", "pytest-django", "pytest-cov", "graphene-django"]
+test = ["pytest", "pytest-django", "pytest-cov", "djangorestframework", "graphene-django"]
 
 [[package]]
 name = "django-debug-toolbar"
@@ -818,7 +821,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "411859e721b658a3d909c665b37d2bf914a889139651a551bc71f99c1c5c510d"
+content-hash = "2caa4ee5c0e5fab2044cc02406e6168754ddd334781a626844f078bb1d5a3ac9"
 
 [metadata.files]
 aiohttp = [
@@ -1042,8 +1045,8 @@ django-anymail = [
     {file = "django_anymail-8.4-py3-none-any.whl", hash = "sha256:2e8307e84f0a12f9283469017094a8246db9a0fc608ac17dd1027ee011ece986"},
 ]
 django-countries = [
-    {file = "django-countries-7.2.1.tar.gz", hash = "sha256:26878b54d36bedff30b4535ceefcb8af6784741a8b30b1b8a662fb14a936a4ab"},
-    {file = "django_countries-7.2.1-py3-none-any.whl", hash = "sha256:adc965f1d348124274b7d918fc1aad5e29609758af999e1822baa9f2cc06d1b8"},
+    {file = "django-countries-7.3.1.tar.gz", hash = "sha256:b6b439cc5c7e766ec2335615160fdcebb9f2774ccc17aaa5e173306832d77594"},
+    {file = "django_countries-7.3.1-py3-none-any.whl", hash = "sha256:5a4ee958f77810bcc38ae96605e47d76a707e81f53cf2938743ef45faafd2fce"},
 ]
 django-debug-toolbar = [
     {file = "django-debug-toolbar-3.2.2.tar.gz", hash = "sha256:8c5b13795d4040008ee69ba82dcdd259c49db346cf7d0de6e561a49d191f0860"},
