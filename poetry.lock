@@ -328,14 +328,14 @@ test = ["pytest", "pytest-django", "pytest-cov", "graphene-django"]
 
 [[package]]
 name = "django-debug-toolbar"
-version = "3.2.2"
+version = "3.4.0"
 description = "A configurable set of panels that display various debug information about the current request/response."
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
-Django = ">=2.2"
+Django = ">=3.2"
 sqlparse = ">=0.2.0"
 
 [[package]]
@@ -818,7 +818,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "411859e721b658a3d909c665b37d2bf914a889139651a551bc71f99c1c5c510d"
+content-hash = "eecdf087dd25711e923298d80471aab1945ab41611571ece0ae9e25ba1fc18ff"
 
 [metadata.files]
 aiohttp = [
@@ -1046,8 +1046,8 @@ django-countries = [
     {file = "django_countries-7.2.1-py3-none-any.whl", hash = "sha256:adc965f1d348124274b7d918fc1aad5e29609758af999e1822baa9f2cc06d1b8"},
 ]
 django-debug-toolbar = [
-    {file = "django-debug-toolbar-3.2.2.tar.gz", hash = "sha256:8c5b13795d4040008ee69ba82dcdd259c49db346cf7d0de6e561a49d191f0860"},
-    {file = "django_debug_toolbar-3.2.2-py3-none-any.whl", hash = "sha256:d7bab7573fab35b0fd029163371b7182f5826c13da69734beb675c761d06a4d3"},
+    {file = "django-debug-toolbar-3.4.0.tar.gz", hash = "sha256:ae6bec2c1ce0e6900b0ab0443e1427eb233d8e6f57a84a0b2705eeecb8874e22"},
+    {file = "django_debug_toolbar-3.4.0-py3-none-any.whl", hash = "sha256:42c1c2e9dc05bb57b53d641e3a6d131fc031b92377b34ae32e604a1fe439bb83"},
 ]
 django-prometheus = [
     {file = "django-prometheus-2.1.0.tar.gz", hash = "sha256:dd3f8da1399140fbef5c00d1526a23d1ade286b144281c325f8e409a781643f2"},
