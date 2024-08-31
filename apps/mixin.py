@@ -3,14 +3,6 @@ from django.contrib.auth.views import redirect_to_login
 from django.core.exceptions import ValidationError
 from django.db import connection, models, transaction
 from django.db.models.signals import post_delete, post_save, pre_save
-from django.utils.decorators import method_decorator
-from django.views.decorators.csrf import csrf_exempt
-
-
-class CSRFExemptMixin:
-    @method_decorator(csrf_exempt)
-    def dispatch(self, *args, **kwargs):
-        return super(CSRFExemptMixin, self).dispatch(*args, **kwargs)
 
 
 class StaffRequiredMixin(LoginRequiredMixin):
@@ -64,7 +56,7 @@ class SequenceMixin(models.Model):
         "顺序", default=1, db_index=True, help_text="处于序列中的第几位"
     )
 
-    @transaction.atomic()
+    @transaction.atomic
     def change_sequence(self, new_sequence, all_query):
         if new_sequence < 1:
             raise ValidationError(f"invalid sequence: {new_sequence}")
